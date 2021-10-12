@@ -6,7 +6,7 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
-		int fib(int);
+		int fib();
 	private:
 		int val;
 	};
@@ -19,12 +19,12 @@ int Integer::get(){
 	return val;
 	}
 
-int Integer::fib(int n){
-	if((n==0||n==1)){
-		return(n);     // these are the fib base cases, returns x with x=0 or x=1
+int Integer::fib(){
+	if((val==0||val==1)){
+		return(val);     // these are the fib base cases, returns x with x=0 or x=1
 	}
 	else{
-		return(fib(n-1)+fib(n-2));
+		return(fib(val-1)+fib(val-2));
 	}
 }
 
