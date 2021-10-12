@@ -18,8 +18,11 @@ class Integer(object):
 	def set(self, val):
 		lib.Integer_set(self.obj, val)
 	
-	def fib(self, val):
+	def fib(self):
 		lib.Integer_fib(self.obj)
+
+	def fibb(self, val):
+		lib.Integer_fib(self.obj, val)
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
