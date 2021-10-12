@@ -1,4 +1,5 @@
 #include <cstdlib>
+using namespace std;
 // Integer class 
 
 class Integer{
