@@ -22,7 +22,7 @@ class Integer(object):
 		lib.Integer_fib(self.obj)
 
 	def fibb(self, val):
-		lib.Integer_fib(self.obj, val)
+		lib.Integer_fibb(self.obj, val)
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
