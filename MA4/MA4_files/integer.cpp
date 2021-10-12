@@ -7,9 +7,10 @@ class Integer{
 		int get();
 		void set(int);
 		int fib();
+		int fibb(int);
 	private:
 		int val;
-		int fibb(int);
+
 	};
  
 Integer::Integer(int n){
