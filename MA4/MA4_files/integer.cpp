@@ -32,13 +32,9 @@ int Integer::fibb(int n){
 }
 int Integer::fib(){
 	if((val==0||val==1)){
-		std::cout << "base case?";
-		std::cout << val;
 		return(val);     // these are the fib base cases, returns x with x=0 or x=1
 	}
 	else{
-		std::cout << "iter case?";
-		std::cout << val;
 		return(fibb(val-1)+fibb(val-2));
 	}
 }
