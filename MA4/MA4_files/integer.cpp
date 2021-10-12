@@ -46,7 +46,8 @@ void Integer::set(int n){
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
 	int Integer_get(Integer* integer) {return integer->get();}
-	int Integer_fib(Integer* integer, int n) {return integer->fib(n);}
+	int Integer_fib(Integer* integer) {return integer->fib();}
+	int Integer_fibb(Integer* integer, int n) {return integer->fib(n);}
 	void Integer_set(Integer* integer, int n) {integer->set(n);}
 	void Integer_delete(Integer* integer){
 		if (integer){
