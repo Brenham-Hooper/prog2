@@ -13,6 +13,7 @@ class Integer(object):
 		lib.Integer_fib.argtypes = [ctypes.c_int]
 		lib.Integer_fib.restype = ctypes.c_int
 		lib.Integer_fibb.argtypes = [ctypes.c_int]
+		lib.Integer_fibb.restype = ctypes.c_int
 		self.obj = lib.Integer_new(val)
 
 	def get(self):
@@ -22,7 +23,7 @@ class Integer(object):
 		lib.Integer_set(self.obj, val)
 	
 	def fib(self):
-		lib.Integer_fib(self.obj)
+		return lib.Integer_fib(self.obj)
 
 	def fibb(self, val):
 		lib.Integer_fibb(self.obj, val)
