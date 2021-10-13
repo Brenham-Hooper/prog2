@@ -27,7 +27,7 @@ def main():
 	plt.scatter(x,y, c='b', marker='x', label='c')
 	plt.scatter(x1, y1, c='r', marker='s', label='python')
 	plt.legend(loc='upper left')
-	plt.xlabel('Fibonacci number')
+	plt.xlabel('Fibonacci number (n)')
 	plt.ylabel('Time (s)')
 	plt.savefig("test.png")
 
