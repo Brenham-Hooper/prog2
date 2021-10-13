@@ -25,7 +25,7 @@ def main():
 		end = pc()
 		y1.append(end-start)
 	plt.scatter(x,y, c='b', marker='x', label='1')
-	plt.scatter(x, y, c='r', marker='s', label='-1')
+	plt.scatter(x1, y1, c='r', marker='s', label='-1')
 	plt.legend(loc='upper left')
 	plt.savefig("test.png")
 
