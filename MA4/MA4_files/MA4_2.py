@@ -30,6 +30,7 @@ def main():
 	plt.xlabel('Fibonacci number (n)')
 	plt.ylabel('Time (s)')
 	plt.savefig("test.png")
-
+	g = Integer(47)
+	print("n=47: " + g.fib())
 if __name__ == '__main__':
 	main()
