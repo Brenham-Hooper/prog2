@@ -31,6 +31,6 @@ def main():
 	plt.ylabel('Time (s)')
 	plt.savefig("test.png")
 	g = Integer(47)
-	print("n=47: " + g.fib())
+	print("n=47: " + str(g.fib()))
 if __name__ == '__main__':
 	main()
