@@ -24,9 +24,11 @@ def main():
 		fib_py(elt)
 		end = pc()
 		y1.append(end-start)
-	plt.scatter(x,y, c='b', marker='x', label='1')
-	plt.scatter(x1, y1, c='r', marker='s', label='-1')
+	plt.scatter(x,y, c='b', marker='x', label='c')
+	plt.scatter(x1, y1, c='r', marker='s', label='python')
 	plt.legend(loc='upper left')
+	plt.xlabel('Fibonacci number')
+	plt.ylabel('Time (s)')
 	plt.savefig("test.png")
 
 if __name__ == '__main__':
